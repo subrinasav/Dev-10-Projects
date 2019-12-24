@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!--
+    Name: Subrina Persaud
+    Date Created: December 6th, 2019
+    Most recent revision:
+-->
+<html lang="en">
+  <head>
+
+    <title>Oceanside Bites</title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link href="RestaurantStyles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <script type="text/javascript" src="restaurantvalidate.js"></script>
+  <style type="text/css">
+
+  div.header, footer {
+  	font-family: 'Comic Sans MS';
+  	color: white;
+  	text-align: center;
+    background: url(https://i.pinimg.com/originals/18/b4/24/18b424adce7cf3ccdcb252d31c8a4cee.jpg);
+  }
+
+    label.required {
+      		color: darkblue;
+    }
+
+
+    	div.main {
+    		background-color: silver;
+    		color: #2A2C32;
+    		padding-bottom: 15px;
+    	}
+
+    table {
+    background-color: silver;
+
+      }
+
+    	h2 {
+        background-color: aliceblue;
+    		text-align: center;
+    	}
+
+    	caption h2 {
+    		color: black;
+    		margin-top: 12px;
+    		margin-bottom: 0px;
+    	}
+
+    	td.openHours {
+    		text-align: right;
+    		padding-left: 15px;
+
+      }
+
+      body{
+       text-align: center;
+      }
+
+
+           </style>
+
+           <!--Name and Logo for Restaurant-->
+         <div class="header container-fluid"
+                   <div class="row">
+                     <h1>Oceanside Bites</h1>
+                     <hr />
+           <!--Make sure users who have JavaScript disabled know the site is best viewed when it is enabled-->
+               <noscript>
+
+               </noscript>
+         </div>
+         <div class="row"
+               <hr />
+           <!--Navigation Bar-->
+               <ul class="nav nav-pills">
+                 <li class="nav-item active">
+                     <a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="menu.html">Menu</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="contactUs.html">Contact</a>
+                 </li>
+             </ul>
+         </div>
+         </div>
+<hr />
+           <!--Jumbotron-->
+           <div class="container"
+           <div class="jumbotron-fluid">
+
+
+         <!--Carousel-->
+         <div class="carousel slide" id="myCarousel" data-ride="carousel">
+             <!--Indicators-->
+               <ul class="carousel-indicators">
+                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                 <li data-target="#myCarousel" data-slide-to="1"></li>
+                 <li data-target="#myCarousel" data-slide-to="2"></li>
+               </ul>
+
+             <!--Slide Information-->
+               <div class="carousel-inner">
+                   <div class="carousel-item active">
+                         <img class="imgItem" src="https://boathousesb.com/wp-content/uploads/2016/05/BoatHouse1.Final_.Layers_HDR2.jpg" alt="First Slide">
+                   <div class="carousel-caption"style="background-color:rgba(0, 0, 0, 0.5);"">
+                         <h3>Opening January 2020</h3>
+                         <p>Our newest location is coming to 3055 New Beach Road!</p>
+                   </div>
+               </div>
+
+               <div class="carousel-item">
+                       <img class="imgItem" src="https://westgatecdn.com/2016/09/Myrtle-beach-xmas.jpg" alt="Second Slide">
+                       <div class="carousel-caption"style="background-color:rgba(0, 0, 0, 0.5);"" >
+                         <h3>We're rolling out our seasonal menu, with special options for this season.</h3>
+                         <p>The Holidays are finally here, let the celebration begin!</p>
+                   </div>
+               </div>
+
+               <div class="carousel-item">
+                         <img class="imgItem" src="https://cdn.vox-cdn.com/thumbor/rdSYA-xUKVa_hTkjsEBxOShzA6Y=/0x0:4162x3122/1200x675/filters:focal(1776x1247:2440x1911)/cdn.vox-cdn.com/uploads/chorus_image/image/63856417/RoofSTShoreClub3Provided.0.jpg"
+                         alt="Third Slide">
+                   <div class="carousel-caption"style="background-color:rgba(0, 0, 0, 0.5);"">
+                         <h3>The Drink of the Month is SG Special Brew.</h3>
+                         <p>What's so special about it you may ask? Stop by and find out!</p>
+                   </div>
+               </div>
+           </div>
+
+             <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+
+         </div>
+
+<!--Contactform-->
+
+	<!-- Contact forms content -->
+	<div class="contactContent container-fluid">
+	<noscript><h2>
+	    ****This website is best viewed with JavaScript enabled in your browser****<br><br>
+	    ****Here are some <a href="http://www.enable-javascript.com/" target="_blank">
+	    instructions on how to enable JavaScript in your web browser</a>****</h2>
+	</noscript>
+        <br><br>
+		<div class="row">
+			<div class="col-md-7 mx-auto">
+				<h2><b>Contact Us</b></h2><br>
+				<form action="#" method="POST" >
+
+					<div class="form-group row">
+						<label for="name" class="required form-control-label col-sm-6"><strong>Name:</strong></label>
+						<div class="col-sm-6 mx-auto">
+							<input type="text"  class="form-control"" id="name" name="name" required>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="email" class="required form-control-label col-sm-6"><strong>Email:</strong></label>
+						<div class="col-sm-6 mx-auto">
+							<input type="email" class="form-control" id="email" name="email" required>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="phone" class="required form-control-label col-sm-6"><strong>Phone:</strong></label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" pattern="[0-9]{10}"  id="phone" name="phone" required>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="reason" class="form-control-label col-sm-6">Reason for Inquiry:</label>
+						<div class="col-sm-4">
+							<select class="form-control" id="reason" name="reason">
+								<option value="catering" selected>Catering</option>
+								<option value="privateParty">Private Party</option>
+								<option value="feedback">Feedback</option>
+								<option value="other">Other</option></select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="info" class="form-control-label col-sm-6 ">Additional Information:</label>
+						<div class="col-sm-6">
+							<textarea class="form-control" id="info"></textarea>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="visited" class="form-control-label col-sm-6 ">Have you been to the restaurant?</label>
+						<div class="col-sm-4">
+							<div class="form-check form-check-inline">
+								<input type="radio" id="no" name="visited" value="no" checked>
+								<label class="form-check-label" for="no">No</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="yes" name="visited" value="yes">
+								<label class="form-check-label" for="yes">Yes</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="bestDay" class="form-control-label col-sm-6">Best day to contact you:</label>
+						<div class="col-sm-5">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="monday" name="bestDay" value="monday">
+								<label class="form-check-label" for="monday">M</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="tuesday" name="bestDay" value="tuesday">
+								<label class="form-check-label" for="tuesday">T</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="wednesday" name="bestDay" value="wednesday">
+								<label class="form-check-label" for="wednesday">W</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="thursday" name="bestDay" value="thursday">
+								<label class="form-check-label" for="thursday">Th</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="friday" name="bestDay" value="friday">
+								<label class="form-check-label" for="friday">F</label>
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary offset-sm-5 text-center" onclick="return validateInfo();">Send Request</button><br><br>
+				</form>
+			     </div>
+            </div>
+		<br>
+	    </div>
+    </div>
+
+
+
+
+  <footer>
+    <hr />
+    <!-- You must supply a fictional address and phone number for the restaurant -->
+        <p>2211 Oceanside Drive, Mullberry, Nueva York, 10428</p>
+        <p>(555)-012-1020</p>
+    <hr />
+</footer>
+
+
+   <!--CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+    </html>
